@@ -28,8 +28,8 @@ public class Categoria {
 		return id;
 	}
 
-	public void setId(Long idCategoria) {
-		this.id = idCategoria;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getNome() {
