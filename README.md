@@ -57,6 +57,6 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 
 | Atributo   | Descrição e motivo da escolha       | Chave       |
 | :---------- | :--------- | :---------------------------------- |
-| `id_categoria` BIGINT | Identificador único da tabela usuário | **PK** |
-| `nome_categoria` VARCHAR(255) | Definir Nome da categoria dos produtos | **NN** |
+| `id` BIGINT | Identificador único da tabela usuário | **PK** |
+| `nome` VARCHAR(255) | Definir Nome da categoria dos produtos | **NN** |
 | `subcategoria` VARCHAR(255) | Definir Subcategoria dos produtos | **NN** |
