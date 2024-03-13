@@ -14,30 +14,30 @@ public class Categoria {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id_categoria;
+	private Long id;
 
 	@NotBlank(message = "O atributo nome categoria é Obrigatório")
 	@Size(min = 5, max = 255, message = "O atributo nome categoria deve conter no mínimo 5 e no máximo 255 caracteres")
-	private String nome_categoria;
+	private String nome;
 
 	@NotBlank(message = "O atributo subcategoria é Obrigatório")
 	@Size(min = 5, max = 255, message = "O atributo subcategoria deve conter no mínimo 5 e no máximo 255 caracteres")
 	private String subcategoria;
 
-	public Long getId_categoria() {
-		return id_categoria;
+	public Long getId() {
+		return id;
 	}
 
-	public void setId_categoria(Long id_categoria) {
-		this.id_categoria = id_categoria;
+	public void setId(Long idCategoria) {
+		this.id = idCategoria;
 	}
 
-	public String getNome_categoria() {
-		return nome_categoria;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNome_categoria(String nome_categoria) {
-		this.nome_categoria = nome_categoria;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public String getSubcategoria() {
