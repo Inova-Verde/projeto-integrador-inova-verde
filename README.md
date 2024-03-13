@@ -49,3 +49,14 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 **Figura 1. Modelo de diagrama de entidade de relacionamento entre produtos, categorias e usuários, sendo que a relação usuarios:produtos é 1:n e categorias:produtos é 1:n.**
 
 </p>
+
+
+# Descrição das Tabelas e seus atributos
+
+### Tabela: tb_categorias
+
+| Atributo   | Descrição e motivo da escolha       | Chave       |
+| :---------- | :--------- | :---------------------------------- |
+| `id_categoria` BIGINT | Identificador único da tabela usuário | **PK** |
+| `nome_categoria` VARCHAR(255) | Definir Nome da categoria dos produtos | **NN** |
+| `subcategoria` VARCHAR(255) | Definir Subcategoria dos produtos | **NN** |
