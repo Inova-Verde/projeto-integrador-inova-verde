@@ -144,7 +144,7 @@ Utilizando a IDE Spring Tool Suite foi criado um nove projeto Spring Starter com
 
 <div style="text-align: justify;">
   <p style="text-align: justify;">
-O projeto InovaVerde ultiliza as dependências descritas na tabela 4 abaixo:
+O projeto InovaVerde utiliza as dependências descritas na tabela 4 abaixo:
   </p>
 </div>
 
