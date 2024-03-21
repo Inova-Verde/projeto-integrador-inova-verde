@@ -209,7 +209,7 @@ Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model, 1 re
 | Pasta   | Arquivos       |
 | :---------- | :--------- |
 | controller | CategoriaController.java, ProdutoControler.java e UsuarioController.java |
-| model | Categoria.java, Produto.java e Usuario.java |
+| model | Categoria.java, Produto.java, Usuario.java e UsuarioLogin.java |
 | repository | CategoriaRepository.java, ProdutoRepository.java e UsuarioRepository.java |
 | security | BasicSecurityConfig.java, JwtAuthFilter.java, JwtService.java, UserDetailsImpl.java e UserDatailsServiceImpl.java |
 | service | UsuarioService.java |
