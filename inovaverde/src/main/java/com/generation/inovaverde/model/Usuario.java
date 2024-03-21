@@ -13,6 +13,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
@@ -38,6 +39,7 @@ public class Usuario {
 
 	@NotNull(message = "O atributo usuário é Obrigatório!")
 	@Size(min = 5, max = 255, message = "O atributo usuário deve conter no mínimo 05 e no máximo 100 caracteres")
+	@Email(message = "O atributo usuário deve ser um e-mail válido")
 	@Column(name = "usuario", unique = true)
 	private String usuario;
 
@@ -45,6 +47,7 @@ public class Usuario {
 	@Size(min = 8, max = 255, message = "O atributo senha deve conter no mínimo 08 e no máximo 100 caracteres")
 	private String senha;
 
+	@Size(max=5000, message = "O atributo foto não pode ser maior que 5000 caracteres")
 	private String foto;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "usuario", cascade = CascadeType.REMOVE)
