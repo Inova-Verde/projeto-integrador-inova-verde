@@ -170,8 +170,14 @@ O projeto InovaVerde utiliza as dependências descritas na tabela 4 abaixo:
 | _Spring Data JPA_ | Essa dependência permite usar os comandos de manipulação do banco de dados utilizando a linguagem Java ao invés de usar diretamente a linguagem SQL, simplificando bastante o código. |
 | _Spring Boot DevTools_ | Essa dependência permite reinicializar a aplicação sempre que um código for alterado e salvo posteriormente, isso permite que o desenvolvedor possa monitorar em tempo real o que está acontecendo na aplicação. |
 | _Spring Web_ | Essa dependência fornece recursos para criar facilmente endpoints RESTful e controladores MVC (Model-View-Controller). Com o Spring Web, você pode criar APIs web poderosas e flexíveis, além de páginas web dinâmicas. |
-| _Validation_ | Essa dependência facilita a validação de dados numa tabela do banco de dados utilizando o conceito de _annotation_, normalmente a _annotation_ se antecede à uma declaração de variável no "model" do projeto Spring podendo aplicar a regra de validação nesta variável |
-| _MySQL Driver_ | Essa dependência faz a ponte entre a aplicação do Spring com a SGBD MySQL Workbench |
+| _Validation_ | Essa dependência facilita a validação de dados numa tabela do banco de dados utilizando o conceito de _annotation_, normalmente a _annotation_ se antecede à uma declaração de variável no "model" do projeto Spring podendo aplicar a regra de validação nesta variável. |
+| _MySQL Driver_ | Essa dependência faz a ponte entre a aplicação do Spring com a SGBD MySQL Workbench. |
+|_Spring Boot Starter Security_| Configura as funcionalidades de segurança, como autenticação e autorização, garantindo proteção dos recursos e facilitando integração com diferentes sistemas de autenticação. |
+|_jjwt api_| Fornece API para manipulação programática de tokens JWT, permitindo criar, validar e extrair informações de forma eficiente e segura. |
+|_jjwt impl_| Implementa as funcionalidades da API jjwt-api, fornecendo mecanismos internos para gerar e validar tokens JWT em conformidade com as especificações estabelecidas. |
+|_Jiwt jacksonl_| Implementa as funcionalidades da API jjwt-api, fornecendo mecanismos internos para gerar e validar tokens JWT em conformidade com as especificações estabelecidas. |
+
+
 
 </div>
 <br>
@@ -187,11 +193,11 @@ Dentro da pasta do projeto Spring temos a seguinte configuração de pastas:
 <div align="center">
   <br>
   
-`scr > main > java > com > generation > inovaverde > (controller, model e repository)`
+`scr > main > java > com > generation > inovaverde > (controller, model,  repository, security e service)`
   
 </div>
 <br>
-Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model e 1 repository dedicado, neste caso será utilizado 3 tabelas ao todo como indica a figura 1, então no projeto teremos: 3 arquivos java para o controller na pasta "controller", 3 arquivos java para o model na pasta "model" e 3 arquivos java para o repository na pasta "repository" como indica a tabela 5 a seguir:
+Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model, 1 repository, 1 security e 1 service dedicado, neste caso será utilizado 3 tabelas ao todo como indica a figura 1, então no projeto teremos: 3 arquivos java para o controller na pasta "controller", 4 arquivos java para o model na pasta "model", 3 arquivos java para o repository na pasta "repository", 5 arquivos java para o security na pasta "security" e 1 arquivo java para o service na pasta "service"  como indica a tabela 5 a seguir:
 
 
 <div align="center">
@@ -205,5 +211,7 @@ Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model e 1 r
 | controller | CategoriaController.java, ProdutoControler.java e UsuarioController.java |
 | model | Categoria.java, Produto.java e Usuario.java |
 | repository | CategoriaRepository.java, ProdutoRepository.java e UsuarioRepository.java |
+| security | BasicSecurityConfig.java, JwtAuthFilter.java, JwtService.java, UserDetailsImpl.java e UserDatailsServiceImpl.java |
+| service | UsuarioService.java |
 
 </div>
