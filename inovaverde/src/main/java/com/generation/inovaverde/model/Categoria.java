@@ -19,24 +19,17 @@ import jakarta.validation.constraints.Size;
 @Table(name = "tb_categorias")
 public class Categoria {
 
-	public List<Produto> getProduto() {
-		return produto;
-	}
-
-	public void setProduto(List<Produto> produto) {
-		this.produto = produto;
-	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@NotBlank(message = "O atributo nome categoria é Obrigatório")
-	@Size(min = 5, max = 255, message = "O atributo nome categoria deve conter no mínimo 5 e no máximo 255 caracteres")
+	@Size(min = 5, max = 100, message = "O atributo nome categoria deve conter no mínimo 5 e no máximo 100 caracteres")
 	private String nome;
 
 	@NotBlank(message = "O atributo subcategoria é Obrigatório")
-	@Size(min = 5, max = 255, message = "O atributo subcategoria deve conter no mínimo 5 e no máximo 255 caracteres")
+	@Size(min = 5, max = 100, message = "O atributo subcategoria deve conter no mínimo 5 e no máximo 100 caracteres")
 	private String subcategoria;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
@@ -65,6 +58,14 @@ public class Categoria {
 
 	public void setSubcategoria(String subcategoria) {
 		this.subcategoria = subcategoria;
+	}
+	
+	public List<Produto> getProduto() {
+		return produto;
+	}
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
 	}
 
 }

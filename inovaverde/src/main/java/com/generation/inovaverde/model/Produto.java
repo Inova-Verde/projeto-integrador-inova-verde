@@ -43,6 +43,7 @@ public class Produto {
 	private String descricao;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING) 
+	@Positive(message = "O atributo estoque deve ser maior do que zero")
 	@NotNull(message = "O atributo estoque é obrigatório!")
 	private BigDecimal estoque;
 	

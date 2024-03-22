@@ -25,14 +25,6 @@ public class Usuario {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	public List<Produto> getProduto() {
-		return produto;
-	}
-
-	public void setProduto(List<Produto> produto) {
-		this.produto = produto;
-	}
-
 	@NotNull(message = "O atributo Nome é Obrigatório!")
 	@Size(min = 5, max = 255, message = "O atributo nome deve conter no mínimo 05 e no máximo 100 caracteres")
 	private String nome;
@@ -93,6 +85,14 @@ public class Usuario {
 
 	public void setFoto(String foto) {
 		this.foto = foto;
+	}
+	
+	public List<Produto> getProduto() {
+		return produto;
+	}
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
 	}
 
 }
