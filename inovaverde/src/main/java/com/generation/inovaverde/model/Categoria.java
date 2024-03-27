@@ -1,5 +1,11 @@
 package com.generation.inovaverde.model;
 
+<<<<<<< HEAD
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+=======
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -11,6 +17,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+>>>>>>> origin/task6
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -19,11 +26,26 @@ import jakarta.validation.constraints.Size;
 @Table(name = "tb_categorias")
 public class Categoria {
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/task6
+>>>>>>> main
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
 	@NotBlank(message = "O atributo nome categoria é Obrigatório")
+<<<<<<< HEAD
+	@Size(min = 5, max = 255, message = "O atributo nome categoria deve conter no mínimo 5 e no máximo 255 caracteres")
+	private String nome;
+
+	@NotBlank(message = "O atributo subcategoria é Obrigatório")
+	@Size(min = 5, max = 255, message = "O atributo subcategoria deve conter no mínimo 5 e no máximo 255 caracteres")
+	private String subcategoria;
+=======
 	@Size(min = 5, max = 100, message = "O atributo nome categoria deve conter no mínimo 5 e no máximo 100 caracteres")
 	private String nome;
 
@@ -34,6 +56,7 @@ public class Categoria {
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("categoria")
 	private List<Produto> produto;
+>>>>>>> origin/task6
 
 	public Long getId() {
 		return id;
@@ -58,6 +81,8 @@ public class Categoria {
 	public void setSubcategoria(String subcategoria) {
 		this.subcategoria = subcategoria;
 	}
+<<<<<<< HEAD
+=======
 	
 	public List<Produto> getProduto() {
 		return produto;
@@ -66,5 +91,6 @@ public class Categoria {
 	public void setProduto(List<Produto> produto) {
 		this.produto = produto;
 	}
+>>>>>>> origin/task6
 
 }

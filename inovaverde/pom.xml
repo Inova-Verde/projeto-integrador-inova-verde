@@ -47,6 +47,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
+=======
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -70,6 +72,7 @@
 			<artifactId>jjwt-jackson</artifactId>
 			<version>0.11.5</version>
 		</dependency>
+<<<<<<< HEAD
 		<!-- Dependência para Geração do Swagger -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
@@ -81,6 +84,9 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 		</dependency>
+=======
+>>>>>>> origin/task6
+>>>>>>> main
 	</dependencies>
 
 	<build>

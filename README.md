@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+# **Projeto integrador InovaVerde**
+<div style="text-align: justify;">
+  <p style="text-align: justify;">
+  O  projeto  InovaVerde  é  um  _e-commerce_  baseado  na  ODS  9  da  ONU  (Indústria,  inovação  e  infraestrutura)
+  </p>
+</div>
+<br>
+
+**-- O problema social --**
+=======
 <h4 align="center"> 
 	🚧  InovaVerde 🚀 Em construção...  🚧
 </h4>
@@ -55,6 +66,7 @@
 # 💡Contextualização
 
 ### O problema social
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   Indústria,  inovação  e  infraestrutura  Construir  infraestruturas  resilientes,  promover  a  industrialização  inclusiva  e  sustentável  e  fomentar  a  inovação.
@@ -63,7 +75,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
+**-- Quais são as causas, os impactos e as consequências do Problema Social foco do projeto na sociedade? --**
+=======
 ### Quais são as causas, os impactos e as consequências do Problema Social foco do projeto na sociedade?
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   Problemas ambientais associados à emissão de CO2 como a chuva ácida, gerando problemas secundários como alteração do PH de corpos hídricos alterando toda a dinâmica da fauna e flora local, além de mudança de preços dos alimentos agrícolas devido a alteração do PH da chuva e outros problemas relacionados a saúde pública como o aumento de doenças respiratórias e aumento da ocupação do leito de hospitais.
@@ -71,7 +87,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
+**-- Qual o motivo da escolha do modelo de software acima? --**
+=======
 ### Qual o motivo da escolha do modelo de software acima?
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   
@@ -80,7 +100,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
+**-- Como a aplicação irá contribuir na solução do Problema Social escolhido pelo grupo? --**
+=======
 ### Como a aplicação irá contribuir na solução do Problema Social?
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   
@@ -89,7 +113,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
+**-- Diagrama de Entidade-Relacionamento (DER) --**
+=======
 # 📌Diagrama de Entidade-Relacionamento (DER)
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   
@@ -113,7 +141,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
+# Descrição das Tabelas e seus atributos
+=======
 ### Descrição das Tabelas e seus atributos
+>>>>>>> origin/task6
 
 <div align="center">
 
@@ -130,6 +162,8 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 | `subcategoria` VARCHAR(255) | Definir Subcategoria dos produtos | **NN** |
 
 </div>
+<<<<<<< HEAD
+=======
 
 A seguir temos exemplos de como será contruído as categorias e suas respectivas subcategorias:
  
@@ -142,6 +176,7 @@ Subcategoria: Kits de compostagem doméstica, Fertilizantes orgânicos e Produto
 Categoria 3: Energia Renovável para Residências e Pequenos Negócios.<br>
 Subcategoria: Kits de energia solar para residências, Sistemas de aquecimento de água solar, Iluminação LED de baixo consumo energético.
 
+>>>>>>> origin/task6
 <br>
 <br>
 <div align="center">
@@ -183,6 +218,14 @@ Subcategoria: Kits de energia solar para residências, Sistemas de aquecimento d
 </div>
 <br>
 
+<<<<<<< HEAD
+# Iniciando um projeto no Spring Starter
+
+Utilizando a IDE Spring Tool Suite foi criado um nove projeto Spring Starter como indica a figura 2 abaixo:
+<div align="center">
+  
+![Spring Starter](https://github.com/Inova-Verde/projeto-integrador-inova-verde/assets/147213232/ba618766-6384-4e6f-b0af-3a6bd29de3c7)
+=======
 # ✔️Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
@@ -216,6 +259,7 @@ Utilizando a IDE Spring Tool Suite foi criado um nove projeto Spring Starter com
 <div align="center">
 
 <img src= "https://github.com/Inova-Verde/projeto-integrador-inova-verde/assets/147213232/ba618766-6384-4e6f-b0af-3a6bd29de3c7" alt="drawing" width="500"/>
+>>>>>>> origin/task6
 
 </div>
 
@@ -227,7 +271,11 @@ Utilizando a IDE Spring Tool Suite foi criado um nove projeto Spring Starter com
 </div>
 <br>
 
+<<<<<<< HEAD
+**-- Dependências do Spring Tool Suite --**
+=======
 ### Dependências do Spring Tool Suite
+>>>>>>> origin/task6
 
 <div style="text-align: justify;">
   <p style="text-align: justify;">
@@ -245,6 +293,10 @@ O projeto InovaVerde utiliza as dependências descritas na tabela 4 abaixo:
 | _Spring Data JPA_ | Essa dependência permite usar os comandos de manipulação do banco de dados utilizando a linguagem Java ao invés de usar diretamente a linguagem SQL, simplificando bastante o código. |
 | _Spring Boot DevTools_ | Essa dependência permite reinicializar a aplicação sempre que um código for alterado e salvo posteriormente, isso permite que o desenvolvedor possa monitorar em tempo real o que está acontecendo na aplicação. |
 | _Spring Web_ | Essa dependência fornece recursos para criar facilmente endpoints RESTful e controladores MVC (Model-View-Controller). Com o Spring Web, você pode criar APIs web poderosas e flexíveis, além de páginas web dinâmicas. |
+<<<<<<< HEAD
+| _Validation_ | Essa dependência facilita a validação de dados numa tabela do banco de dados utilizando o conceito de _annotation_, normalmente a _annotation_ se antecede à uma declaração de variável no "model" do projeto Spring podendo aplicar a regra de validação nesta variável |
+| _MySQL Driver_ | Essa dependência faz a ponte entre a aplicação do Spring com a SGBD MySQL Workbench |
+=======
 | _Validation_ | Essa dependência facilita a validação de dados numa tabela do banco de dados utilizando o conceito de _annotation_, normalmente a _annotation_ se antecede à uma declaração de variável no "model" do projeto Spring podendo aplicar a regra de validação nesta variável. |
 | _MySQL Driver_ | Essa dependência faz a ponte entre a aplicação do Spring com a SGBD MySQL Workbench. |
 |_Spring Boot Starter Security_| Configura as funcionalidades de segurança, como autenticação e autorização, garantindo proteção dos recursos e facilitando integração com diferentes sistemas de autenticação. |
@@ -253,11 +305,16 @@ O projeto InovaVerde utiliza as dependências descritas na tabela 4 abaixo:
 |_Jiwt jacksonl_| Implementa as funcionalidades da API jjwt-api, fornecendo mecanismos internos para gerar e validar tokens JWT em conformidade com as especificações estabelecidas. |
 
 
+>>>>>>> origin/task6
 
 </div>
 <br>
 
+<<<<<<< HEAD
+**-- Estruturas relevantes do projeto Spring --**
+=======
 ### Estruturas relevantes do projeto Spring
+>>>>>>> origin/task6
 
 <div style="text-align: justify;">
   <p style="text-align: justify;">
@@ -268,11 +325,19 @@ Dentro da pasta do projeto Spring temos a seguinte configuração de pastas:
 <div align="center">
   <br>
   
+<<<<<<< HEAD
+`scr > main > java > com > generation > inovaverde > (controller, model e repository)`
+  
+</div>
+<br>
+Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model e 1 repository dedicado, neste caso será utilizado 3 tabelas ao todo como indica a figura 1, então no projeto teremos: 3 arquivos java para o controller na pasta "controller", 3 arquivos java para o model na pasta "model" e 3 arquivos java para o repository na pasta "repository" como indica a tabela 5 a seguir:
+=======
 `scr > main > java > com > generation > inovaverde > (controller, model,  repository, security e service)`
   
 </div>
 <br>
 Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model, 1 repository, 1 security e 1 service dedicado, neste caso será utilizado 3 tabelas ao todo como indica a figura 1, então no projeto teremos: 3 arquivos java para o controller na pasta "controller", 4 arquivos java para o model na pasta "model", 3 arquivos java para o repository na pasta "repository", 5 arquivos java para o security na pasta "security" e 1 arquivo java para o service na pasta "service"  como indica a tabela 5 a seguir:
+>>>>>>> origin/task6
 
 
 <div align="center">
@@ -284,6 +349,12 @@ Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model, 1 re
 | Pasta   | Arquivos       |
 | :---------- | :--------- |
 | controller | CategoriaController.java, ProdutoControler.java e UsuarioController.java |
+<<<<<<< HEAD
+| model | Categoria.java, Produto.java e Usuario.java |
+| repository | CategoriaRepository.java, ProdutoRepository.java e UsuarioRepository.java |
+
+</div>
+=======
 | model | Categoria.java, Produto.java, Usuario.java e UsuarioLogin.java |
 | repository | CategoriaRepository.java, ProdutoRepository.java e UsuarioRepository.java |
 | security | BasicSecurityConfig.java, JwtAuthFilter.java, JwtService.java, UserDetailsImpl.java e UserDatailsServiceImpl.java |
@@ -323,3 +394,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
   </tr>
 </table>
 </div>
+>>>>>>> origin/task6
