@@ -57,33 +57,9 @@ public class Produto {
 	@ManyToOne
 	@JsonIgnoreProperties ("produto")
 	private Usuario usuario;
-	
+
 	public Long getId() {
 		return id;
-	}
-
-	public BigDecimal getEstoque() {
-		return estoque;
-	}
-
-	public void setEstoque(BigDecimal estoque) {
-		this.estoque = estoque;
-	}
-
-	public Categoria getCategoria() {
-		return categoria;
-	}
-
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}
-
-	public Usuario getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
 	}
 
 	public void setId(Long id) {
@@ -114,6 +90,14 @@ public class Produto {
 		this.descricao = descricao;
 	}
 
+	public BigDecimal getEstoque() {
+		return estoque;
+	}
+
+	public void setEstoque(BigDecimal estoque) {
+		this.estoque = estoque;
+	}
+
 	public LocalDate getDataValidade() {
 		return dataValidade;
 	}
@@ -121,5 +105,23 @@ public class Produto {
 	public void setDataValidade(LocalDate dataValidade) {
 		this.dataValidade = dataValidade;
 	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	
+
 	
 }

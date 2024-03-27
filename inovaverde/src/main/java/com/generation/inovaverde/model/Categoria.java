@@ -28,8 +28,11 @@ public class Categoria {
 
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 
 >>>>>>> origin/task6
+>>>>>>> main
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

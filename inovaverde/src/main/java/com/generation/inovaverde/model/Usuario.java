@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -26,13 +27,14 @@ public class Usuario {
 	private Long id;
 
 	@NotNull(message = "O atributo Nome é Obrigatório!")
-	@Size(min = 5, max = 255, message = "O atributo nome deve conter no mínimo 05 e no máximo 100 caracteres")
+	@Size(min = 4, max = 255, message = "O atributo nome deve conter no mínimo 04 e no máximo 100 caracteres")
 	private String nome;
 
 	@NotNull(message = "O atributo usuário é Obrigatório!")
-	@Size(min = 5, max = 255, message = "O atributo usuário deve conter no mínimo 05 e no máximo 100 caracteres")
+	@Size(min = 4, max = 255, message = "O atributo usuário deve conter no mínimo 04 e no máximo 100 caracteres")
 	@Email(message = "O atributo usuário deve ser um e-mail válido")
 	@Column(name = "usuario", unique = true)
+	@Schema(example = "email@email.com.br")
 	private String usuario;
 
 	@NotNull(message = "O atributo senha é Obrigatório!")

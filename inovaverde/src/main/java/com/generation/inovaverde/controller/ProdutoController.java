@@ -36,7 +36,7 @@ public class ProdutoController {
 		return ResponseEntity.ok(produtoRepository.findAll());
 	}
 
-	@GetMapping("/id/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<Produto> getById(@PathVariable Long id) {
 		return produtoRepository.findById(id).map(resposta -> ResponseEntity.ok(resposta))
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
@@ -60,7 +60,7 @@ public class ProdutoController {
 	}
 
 	@ResponseStatus(HttpStatus.NO_CONTENT)
-	@DeleteMapping("/id/{id}")
+	@DeleteMapping("/{id}")
 	public void delete(@PathVariable Long id) {
 		Optional<Produto> produto = produtoRepository.findById(id);
 
