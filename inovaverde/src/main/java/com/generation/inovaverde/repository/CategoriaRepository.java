@@ -8,16 +8,8 @@ import org.springframework.stereotype.Repository;
 
 import com.generation.inovaverde.model.Categoria;
 
-<<<<<<< HEAD
 @Repository
-public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
-	public List<Categoria> findAllByNomeContainingIgnoreCase(@Param("nome") String nome);
-=======
-
-@Repository
-public interface CategoriaRepository extends JpaRepository<Categoria, Long>{
-	
+public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 	public List<Categoria> findAllByNomeContainingIgnoreCase(@Param("nome") String nome);
 
->>>>>>> origin/task6
 }
