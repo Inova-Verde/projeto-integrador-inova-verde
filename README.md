@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # **Projeto integrador InovaVerde**
 <div style="text-align: justify;">
   <p style="text-align: justify;">
@@ -7,6 +8,65 @@
 <br>
 
 **-- O problema social --**
+=======
+<h4 align="center"> 
+	🚧  InovaVerde 🚀 Em construção...  🚧
+</h4>
+
+<div align="center">
+
+  <img src= "https://github.com/Inova-Verde/projeto-integrador-inova-verde/assets/147213232/af7509c4-70e3-49dd-bf81-e9c57abf3b5a" alt="drawing" width="300"/>
+
+
+</div>
+
+# 🌳**Projeto integrador InovaVerde**
+<div style="text-align: justify;">
+  <p style="text-align: justify;">
+    
+### Descrição do Projeto
+    
+ <p align="center"> 
+   O  projeto  InovaVerde  é  um  _e-commerce_  baseado  na  ODS  9  da  ONU  (Indústria,  inovação  e  infraestrutura)
+   <br><br>
+ <img src="https://img.shields.io/badge/Java_17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" width="156"/>
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white" width="150"/>
+<img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" width="156" height="46"/>
+ </p>
+
+</div>
+
+# ✨Features
+
+- [x] CRUD de usuário
+- [x] CRUD de categorias
+- [x] CRUD de produtos
+- [x] CRUD do banco de dados
+- [ ] Transferência
+<br>
+
+# 📝Tabela de conteúdos
+<!--ts-->
+   * 👉[Descrição do Projeto](#descricao-do-projeto)
+   * 👉[Tabela de Conteudos](#Tabela-de-conteúdos)
+   * 👉[Contextualização](#Contextualização)
+      * [O problema social](#O-problema-social)
+      * [Quais são as causas, os impactos e as consequências do Problema Social foco do projeto na sociedade?](#local-files)
+      * [Qual o motivo da escolha do modelo de software acima?](#remote-files)
+      * [Como a aplicação irá contribuir na solução do Problema Social?](#multiple-files)
+   * 👉[Diagrama de Entidade-Relacionamento (DER)](#testes)
+   * 👉[Descrição das Tabelas e seus atributos](#tecnologias)
+   * 👉[Iniciando um projeto no Spring Starter](#tecnologias)
+      * [Dependências do Spring Tool Suite](#O-problema-social)
+      * [Estruturas relevantes do projeto Spring](#O-problema-social)
+<!--te-->
+<br>
+<br>
+
+# 💡Contextualização
+
+### O problema social
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   Indústria,  inovação  e  infraestrutura  Construir  infraestruturas  resilientes,  promover  a  industrialização  inclusiva  e  sustentável  e  fomentar  a  inovação.
@@ -15,7 +75,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
 **-- Quais são as causas, os impactos e as consequências do Problema Social foco do projeto na sociedade? --**
+=======
+### Quais são as causas, os impactos e as consequências do Problema Social foco do projeto na sociedade?
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   Problemas ambientais associados à emissão de CO2 como a chuva ácida, gerando problemas secundários como alteração do PH de corpos hídricos alterando toda a dinâmica da fauna e flora local, além de mudança de preços dos alimentos agrícolas devido a alteração do PH da chuva e outros problemas relacionados a saúde pública como o aumento de doenças respiratórias e aumento da ocupação do leito de hospitais.
@@ -23,7 +87,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
 **-- Qual o motivo da escolha do modelo de software acima? --**
+=======
+### Qual o motivo da escolha do modelo de software acima?
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   
@@ -32,7 +100,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
 **-- Como a aplicação irá contribuir na solução do Problema Social escolhido pelo grupo? --**
+=======
+### Como a aplicação irá contribuir na solução do Problema Social?
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   
@@ -41,7 +113,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
 **-- Diagrama de Entidade-Relacionamento (DER) --**
+=======
+# 📌Diagrama de Entidade-Relacionamento (DER)
+>>>>>>> origin/task6
 <div style="text-align: justify;">
   <p style="text-align: justify;">
   
@@ -65,7 +141,11 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
 # Descrição das Tabelas e seus atributos
+=======
+### Descrição das Tabelas e seus atributos
+>>>>>>> origin/task6
 
 <div align="center">
 
@@ -82,6 +162,21 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 | `subcategoria` VARCHAR(255) | Definir Subcategoria dos produtos | **NN** |
 
 </div>
+<<<<<<< HEAD
+=======
+
+A seguir temos exemplos de como será contruído as categorias e suas respectivas subcategorias:
+ 
+Categoria 1: Produtos Orgânicos e Sustentáveis.<br>
+Subcategoria: Frutas orgânicas e Vegetais orgânicos.
+
+Categoria 2: Produtos de Agricultura de Conservação.<br>
+Subcategoria: Kits de compostagem doméstica, Fertilizantes orgânicos e Produtos para manejo de pragas e doenças orgânicos.
+
+Categoria 3: Energia Renovável para Residências e Pequenos Negócios.<br>
+Subcategoria: Kits de energia solar para residências, Sistemas de aquecimento de água solar, Iluminação LED de baixo consumo energético.
+
+>>>>>>> origin/task6
 <br>
 <br>
 <div align="center">
@@ -123,12 +218,48 @@ O foco do projeto é a meta 9.4: “Até 2030, modernizar a infraestrutura e rea
 </div>
 <br>
 
+<<<<<<< HEAD
 # Iniciando um projeto no Spring Starter
 
 Utilizando a IDE Spring Tool Suite foi criado um nove projeto Spring Starter como indica a figura 2 abaixo:
 <div align="center">
   
 ![Spring Starter](https://github.com/Inova-Verde/projeto-integrador-inova-verde/assets/147213232/ba618766-6384-4e6f-b0af-3a6bd29de3c7)
+=======
+# ✔️Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+## 🎲 Rodando o Back End (servidor)
+
+### Clone este repositório
+$ git clone <https://github.com/tgmarinho/nlw1>
+
+### Acesse a pasta do projeto no terminal/cmd
+$ cd nlw1
+
+### Vá para a pasta server
+$ cd server
+
+### Instale as dependências
+$ npm install
+
+### Execute a aplicação em modo de desenvolvimento
+$ npm run dev:server
+
+### O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+
+<br>
+
+ # 📦Iniciando um projeto no Spring Starter
+
+Utilizando a IDE Spring Tool Suite foi criado um nove projeto Spring Starter como indica a figura 2 abaixo:
+<div align="center">
+
+<img src= "https://github.com/Inova-Verde/projeto-integrador-inova-verde/assets/147213232/ba618766-6384-4e6f-b0af-3a6bd29de3c7" alt="drawing" width="500"/>
+>>>>>>> origin/task6
 
 </div>
 
@@ -140,7 +271,11 @@ Utilizando a IDE Spring Tool Suite foi criado um nove projeto Spring Starter com
 </div>
 <br>
 
+<<<<<<< HEAD
 **-- Dependências do Spring Tool Suite --**
+=======
+### Dependências do Spring Tool Suite
+>>>>>>> origin/task6
 
 <div style="text-align: justify;">
   <p style="text-align: justify;">
@@ -158,13 +293,28 @@ O projeto InovaVerde utiliza as dependências descritas na tabela 4 abaixo:
 | _Spring Data JPA_ | Essa dependência permite usar os comandos de manipulação do banco de dados utilizando a linguagem Java ao invés de usar diretamente a linguagem SQL, simplificando bastante o código. |
 | _Spring Boot DevTools_ | Essa dependência permite reinicializar a aplicação sempre que um código for alterado e salvo posteriormente, isso permite que o desenvolvedor possa monitorar em tempo real o que está acontecendo na aplicação. |
 | _Spring Web_ | Essa dependência fornece recursos para criar facilmente endpoints RESTful e controladores MVC (Model-View-Controller). Com o Spring Web, você pode criar APIs web poderosas e flexíveis, além de páginas web dinâmicas. |
+<<<<<<< HEAD
 | _Validation_ | Essa dependência facilita a validação de dados numa tabela do banco de dados utilizando o conceito de _annotation_, normalmente a _annotation_ se antecede à uma declaração de variável no "model" do projeto Spring podendo aplicar a regra de validação nesta variável |
 | _MySQL Driver_ | Essa dependência faz a ponte entre a aplicação do Spring com a SGBD MySQL Workbench |
+=======
+| _Validation_ | Essa dependência facilita a validação de dados numa tabela do banco de dados utilizando o conceito de _annotation_, normalmente a _annotation_ se antecede à uma declaração de variável no "model" do projeto Spring podendo aplicar a regra de validação nesta variável. |
+| _MySQL Driver_ | Essa dependência faz a ponte entre a aplicação do Spring com a SGBD MySQL Workbench. |
+|_Spring Boot Starter Security_| Configura as funcionalidades de segurança, como autenticação e autorização, garantindo proteção dos recursos e facilitando integração com diferentes sistemas de autenticação. |
+|_jjwt api_| Fornece API para manipulação programática de tokens JWT, permitindo criar, validar e extrair informações de forma eficiente e segura. |
+|_jjwt impl_| Implementa as funcionalidades da API jjwt-api, fornecendo mecanismos internos para gerar e validar tokens JWT em conformidade com as especificações estabelecidas. |
+|_Jiwt jacksonl_| Implementa as funcionalidades da API jjwt-api, fornecendo mecanismos internos para gerar e validar tokens JWT em conformidade com as especificações estabelecidas. |
+
+
+>>>>>>> origin/task6
 
 </div>
 <br>
 
+<<<<<<< HEAD
 **-- Estruturas relevantes do projeto Spring --**
+=======
+### Estruturas relevantes do projeto Spring
+>>>>>>> origin/task6
 
 <div style="text-align: justify;">
   <p style="text-align: justify;">
@@ -175,11 +325,19 @@ Dentro da pasta do projeto Spring temos a seguinte configuração de pastas:
 <div align="center">
   <br>
   
+<<<<<<< HEAD
 `scr > main > java > com > generation > inovaverde > (controller, model e repository)`
   
 </div>
 <br>
 Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model e 1 repository dedicado, neste caso será utilizado 3 tabelas ao todo como indica a figura 1, então no projeto teremos: 3 arquivos java para o controller na pasta "controller", 3 arquivos java para o model na pasta "model" e 3 arquivos java para o repository na pasta "repository" como indica a tabela 5 a seguir:
+=======
+`scr > main > java > com > generation > inovaverde > (controller, model,  repository, security e service)`
+  
+</div>
+<br>
+Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model, 1 repository, 1 security e 1 service dedicado, neste caso será utilizado 3 tabelas ao todo como indica a figura 1, então no projeto teremos: 3 arquivos java para o controller na pasta "controller", 4 arquivos java para o model na pasta "model", 3 arquivos java para o repository na pasta "repository", 5 arquivos java para o security na pasta "security" e 1 arquivo java para o service na pasta "service"  como indica a tabela 5 a seguir:
+>>>>>>> origin/task6
 
 
 <div align="center">
@@ -191,7 +349,49 @@ Em que cada tabela criada no banco de dados teremos: 1 controller, 1 model e 1 r
 | Pasta   | Arquivos       |
 | :---------- | :--------- |
 | controller | CategoriaController.java, ProdutoControler.java e UsuarioController.java |
+<<<<<<< HEAD
 | model | Categoria.java, Produto.java e Usuario.java |
 | repository | CategoriaRepository.java, ProdutoRepository.java e UsuarioRepository.java |
 
 </div>
+=======
+| model | Categoria.java, Produto.java, Usuario.java e UsuarioLogin.java |
+| repository | CategoriaRepository.java, ProdutoRepository.java e UsuarioRepository.java |
+| security | BasicSecurityConfig.java, JwtAuthFilter.java, JwtService.java, UserDetailsImpl.java e UserDatailsServiceImpl.java |
+| service | UsuarioService.java |
+
+</div>
+<br>
+<br>
+
+# 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Expo](https://expo.io/)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+  
+<br>
+
+# 🤝Contribuidores
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/2254731?s=400&u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&v=4" width="100px;" alt=""/><br /><sub><b>Diego Fernandes</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/4669899?s=460&u=806503605676192b5d0c363e4490e13d8127ed64&v=4" width="100px;" alt=""/><br /><sub><b>Cleiton Souza</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/861751?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Robson Marques</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">👨‍🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/16831337?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Claudio Orlandi</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars0.githubusercontent.com/u/39345247?s=460&u=cdff2624a327a43e2765112a54e966a06eac6d79&v=4" width="100px;" alt=""/><br /><sub><b>Joseph Oliveira</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars0.githubusercontent.com/u/10366880?s=460&u=59e93e1752e9d2ece4b7d8e129d60caba9c94207&v=4" width="100px;" alt=""/><br /><sub><b>Guilherme Rodz</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/37725197?s=460&u=446439436524c37f66e41f35b607dbb70358d5e4&v=4" width="100px;" alt=""/><br /><sub><b>Vinícios Fraga</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a></td>
+    <td align="center"><a href="https://rocketseat.com.br"><img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/26551306?s=460&u=18446655ccae6c2a29eb177a104ecf32f029aa3a&v=4" width="100px;" alt=""/><br /><sub><b>Hugo Duarte</b></sub></a><br /><a href="https://rocketseat.com.br/" title="Rocketseat">🚀</a>  <a href="https://blog.rocketseat.com.br/" title="Blog">🌐</a></td>
+  </tr>
+</table>
+</div>
+>>>>>>> origin/task6
