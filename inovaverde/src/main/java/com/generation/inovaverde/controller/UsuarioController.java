@@ -27,10 +27,13 @@ import jakarta.validation.Valid;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioController {
 
-	@Autowired
 	private UsuarioService usuarioService;
 
 	@Autowired
+    public void setUsuarioService(UsuarioService usuarioService){
+        this.usuarioService=usuarioService;
+    }
+	
 	private UsuarioRepository usuarioRepository;
 	
 	@GetMapping("/all")

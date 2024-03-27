@@ -19,7 +19,6 @@ import com.generation.inovaverde.security.JwtService;
 @Service
 public class UsuarioService {
 
-	@Autowired
 	private UsuarioRepository usuarioRepository;
 
 	@Autowired
@@ -30,7 +29,7 @@ public class UsuarioService {
 
 	public Optional<Usuario> cadastrarUsuario(Usuario usuario) {
 
-		if (usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
+		if (usuarioRepository.findUsuarioByUsuario(usuario.getUsuario()).isPresent())
 			return Optional.empty();
 
 		usuario.setSenha(criptografarSenha(usuario.getSenha()));
@@ -43,7 +42,7 @@ public class UsuarioService {
 		
 		if(usuarioRepository.findById(usuario.getId()).isPresent()) {
 
-			Optional<Usuario> buscaUsuario = usuarioRepository.findByUsuario(usuario.getUsuario());
+			Optional<Usuario> buscaUsuario = usuarioRepository.findUsuarioByUsuario(usuario.getUsuario());
 
 			if ( (buscaUsuario.isPresent()) && ( buscaUsuario.get().getId() != usuario.getId()))
 				throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Usuário já existe!", null);
@@ -70,7 +69,7 @@ public class UsuarioService {
 		if (authentication.isAuthenticated()) {
 
             // Busca os dados do usuário
-			Optional<Usuario> usuario = usuarioRepository.findByUsuario(usuarioLogin.get().getUsuario());
+			Optional<Usuario> usuario = usuarioRepository.findUsuarioByUsuario(usuarioLogin.get().getUsuario());
 
             // Se o usuário foi encontrado
 			if (usuario.isPresent()) {
