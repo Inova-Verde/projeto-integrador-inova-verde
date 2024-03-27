@@ -23,45 +23,56 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableWebSecurity
 public class BasicSecurityConfig {
 
-	@Autowired
-	private JwtAuthFilter authFilter;
+    @Autowired
+    private JwtAuthFilter authFilter;
 
-	@Bean
-	UserDetailsService userDetailsService() {
-		return new UserDetailsServiceImpl();
-	}
+    @Bean
+    UserDetailsService userDetailsService() {
 
-	@Bean
-	PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
+        return new UserDetailsServiceImpl();
+    }
 
-	@Bean
-	AuthenticationProvider authenticationProvider() {
-		DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
-		authenticationProvider.setUserDetailsService(userDetailsService());
-		authenticationProvider.setPasswordEncoder(passwordEncoder());
-		return authenticationProvider;
-	}
+    @Bean
+    PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 
-	@Bean
-	AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
-			throws Exception {
-		return authenticationConfiguration.getAuthenticationManager();
-	}
+    @Bean
+    AuthenticationProvider authenticationProvider() {
+        DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
+        authenticationProvider.setUserDetailsService(userDetailsService());
+        authenticationProvider.setPasswordEncoder(passwordEncoder());
+        return authenticationProvider;
+    }
 
-	@Bean
-	SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    @Bean
+    AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
+            throws Exception {
+        return authenticationConfiguration.getAuthenticationManager();
+    }
 
-		http.sessionManagement(management -> management.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-				.csrf(csrf -> csrf.disable()).cors(withDefaults());
+    @Bean
+    SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-		http.authorizeHttpRequests((auth) -> auth.requestMatchers("/usuarios/logar").permitAll()
-				.requestMatchers("/usuarios/cadastrar").permitAll().requestMatchers("/error/**").permitAll()
-				.requestMatchers(HttpMethod.OPTIONS).permitAll().anyRequest().authenticated())
-				.authenticationProvider(authenticationProvider())
-				.addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class).httpBasic(withDefaults());
+    	http
+	        .sessionManagement(management -> management
+	                .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+	        		.csrf(csrf -> csrf.disable())
+	        		.cors(withDefaults());
+
+    	http
+	        .authorizeHttpRequests((auth) -> auth
+	                .requestMatchers("/usuarios/logar").permitAll()
+	                .requestMatchers("/usuarios/cadastrar").permitAll()
+	                .requestMatchers("/error/**").permitAll()
+	                .requestMatchers(HttpMethod.OPTIONS).permitAll()
+	                .anyRequest().authenticated())
+	        .authenticationProvider(authenticationProvider())
+	        .addFilterBefore(authFilter, UsernamePasswordAuthenticationFilter.class)
+	        .httpBasic(withDefaults());
 
 		return http.build();
-	}
+
+    }
+
 }
