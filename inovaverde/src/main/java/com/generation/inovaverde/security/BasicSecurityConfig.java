@@ -16,6 +16,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+import com.generation.inovaverde.repository.UsuarioRepository;
+
 import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
@@ -24,11 +27,7 @@ public class BasicSecurityConfig {
 
 	@Autowired
 	private JwtAuthFilter authFilter;
-	
-	@Bean
-	public UserDetailsService userDetailsService() {
-		return new UserDetailsServiceImpl();
-	}
+
 	
 	@Bean
 	public PasswordEncoder passwordEncoder() {
@@ -36,12 +35,17 @@ public class BasicSecurityConfig {
 	}
 	
 	@Bean
-	public AuthenticationProvider authenticationProvider() {
-		DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
-		authenticationProvider.setUserDetailsService(userDetailsService());
-		authenticationProvider.setPasswordEncoder(passwordEncoder());
-		return authenticationProvider;
+	@Autowired
+	public UserDetailsService userDetailsService(UsuarioRepository usuarioRepository) {
+	    return new UserDetailsServiceImpl(usuarioRepository);
 	}
+	
+//	@Bean
+//	public AuthenticationProvider authenticationProvider() {
+//		DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
+//		authenticationProvider.setPasswordEncoder(passwordEncoder());
+//		return authenticationProvider;
+//	}
 	
 	@Bean
 	AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)

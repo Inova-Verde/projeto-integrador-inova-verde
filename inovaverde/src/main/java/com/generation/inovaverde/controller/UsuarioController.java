@@ -29,11 +29,6 @@ public class UsuarioController {
 
 	private UsuarioService usuarioService;
 
-	@Autowired
-    public void setUsuarioService(UsuarioService usuarioService){
-        this.usuarioService=usuarioService;
-    }
-	
 	private UsuarioRepository usuarioRepository;
 	
 	@GetMapping("/all")

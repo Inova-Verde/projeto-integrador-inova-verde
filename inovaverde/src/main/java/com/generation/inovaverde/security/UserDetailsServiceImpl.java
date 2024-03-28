@@ -17,17 +17,16 @@ import com.generation.inovaverde.repository.UsuarioRepository;
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService{
 
-
-	private UsuarioRepository usuarioRepository;
+	@Autowired
+    private UsuarioRepository usuarioRepository;
 	
-	@Transactional
-    public void addClient(Usuario usuario){
-        usuarioRepository.saveAndFlush(usuario);
-    }
+	public UserDetailsServiceImpl(UsuarioRepository usuarioRepository) {
+	    this.usuarioRepository = usuarioRepository;
+	}
 	
 	@Override
 	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
-		Optional<Usuario> usuario = usuarioRepository.findUsuarioByUsuario(userName);
+		Optional<Usuario> usuario = usuarioRepository.findByUsuario(userName);
 		
 		if(usuario.isPresent())
 			return new UserDetailsImpl(usuario.get());
